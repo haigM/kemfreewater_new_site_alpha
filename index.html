@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kem Free Water - Chemical-Free Pool Solutions</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00A0B0',
+                        secondary: '#6A4A3C',
+                        accent: '#CC333F',
+                        light: '#EBEBEB',
+                        dark: '#2A2C2B'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0,160,176,0.9) 0%, rgba(42,44,43,0.9) 100%);
+        }
+        .pool-water-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .pool-water-effect::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 20%;
+            background: linear-gradient(0deg, rgba(0,160,176,0.7) 0%, rgba(0,160,176,0) 100%);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-dark bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <img class="h-10 w-auto" src="https://img1.wsimg.com/isteam/ip/e8aa24ed-3f85-4bc9-84ae-bd65394966ba/blob-2a462de.png/:/rs=h:200,cg:true,m/qt=q:95" alt="Kem Free Water">
+                        <span class="ml-2 text-xl font-bold text-primary">Kem Free Water</span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="px-3 py-2 text-sm font-medium hover:text-primary transition">Home</a>
+                    <a href="#about" class="px-3 py-2 text-sm font-medium hover:text-primary transition">About</a>
+                    <a href="#technology" class="px-3 py-2 text-sm font-medium hover:text-primary transition">Technology</a>
+                    <a href="#contact" class="px-3 py-2 text-sm font-medium hover:text-primary transition">Contact</a>
+                    <a href="tel:8555363733" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition">
+                        <i data-feather="phone" class="w-4 h-4 inline mr-1"></i> 855-536-3733
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="pt-2 pb-3 space-y-1 px-4">
+                <a href="#" class="block px-3 py-2 text-base font-medium hover:text-primary transition">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium hover:text-primary transition">About</a>
+                <a href="#technology" class="block px-3 py-2 text-base font-medium hover:text-primary transition">Technology</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium hover:text-primary transition">Contact</a>
+                <a href="tel:8555363733" class="block bg-primary text-white px-4 py-2 rounded-md text-base font-medium hover:bg-opacity-90 transition w-full text-center mt-2">
+                    <i data-feather="phone" class="w-4 h-4 inline mr-1"></i> 855-536-3733
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pool-water-effect">
+        <div class="hero-gradient h-screen flex items-center justify-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20 md:py-32">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6" data-aos="fade-up">
+                    Your Dream Pool Awaits
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Quality swimming pools without harmful chemicals. Experience the cleanest, healthiest water with our revolutionary technology.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="bg-accent text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-opacity-90 transition shadow-lg">
+                        Get Started
+                    </a>
+                    <a href="#technology" class="bg-white text-primary px-6 py-3 rounded-md text-lg font-medium hover:bg-opacity-90 transition shadow-lg">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
+            <a href="#about" class="text-white animate-bounce">
+                <i data-feather="chevron-down" class="w-10 h-10"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-secondary mb-6">The Evolution of Pool Sanitation Technology</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Kem Free Water represents the next generation in pool sanitation, eliminating the need for harsh chemicals while maintaining crystal clear water.
+                    </p>
+                    <div class="bg-light p-6 rounded-lg shadow-inner">
+                        <h3 class="text-xl font-semibold text-primary mb-4">Our Mission</h3>
+                        <p class="text-gray-600">
+                            At Kem Free Water, we are dedicated to providing eco-friendly swimming pool solutions that prioritize health and sustainability. Our goal is to create the cleanest and most enjoyable swimming experience without the use of harmful chemicals.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://img1.wsimg.com/isteam/getty/187853521/:/" alt="Clean Pool Water" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-secondary mb-4" data-aos="fade-up">Know What You're Swimming In</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Our advanced technology ensures your pool stays clean without compromising your health or the environment.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up">
+                    <img src="https://img1.wsimg.com/isteam/ip/e8aa24ed-3f85-4bc9-84ae-bd65394966ba/blob-9dc5984.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:370,cg:true" alt="Traditional Pool" class="rounded-lg mb-6 w-full">
+                    <h3 class="text-xl font-semibold text-primary mb-3">Traditional Pools</h3>
+                    <p class="text-gray-600">
+                        Conventional pools rely on harsh chemicals that can cause skin irritation, red eyes, and respiratory problems. The chlorine smell isn't clean - it's the smell of chemical reactions.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://img1.wsimg.com/isteam/ip/e8aa24ed-3f85-4bc9-84ae-bd65394966ba/blob-e9c9264.png/:/cr=t:1.1%25,l:0%25,w:98.9%25,h:98.9%25/rs=w:370,cg:true,m" alt="Kem Free Pool" class="rounded-lg mb-6 w-full">
+                    <h3 class="text-xl font-semibold text-primary mb-3">Kem Free Pools</h3>
+                    <p class="text-gray-600">
+                        Our system creates a healthier swimming environment with water so pure you can open your eyes underwater without irritation. No chemical smell, no itchy skin - just pure refreshment.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-primary text-white rounded-lg overflow-hidden shadow-xl" data-aos="fade-up">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="text-2xl font-bold mb-4">Life Changing Decision</h3>
+                        <p class="mb-6">
+                            Switching to Kem Free Water isn't just about pool maintenance - it's about transforming your entire swimming experience. Enjoy water that's gentle on your skin, safe for your family, and better for the environment.
+                        </p>
+                        <a href="#contact" class="inline-block bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition">
+                            Contact Us Today
+                        </a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://img1.wsimg.com/isteam/ip/e8aa24ed-3f85-4bc9-84ae-bd65394966ba/Going%20Organic%20%203-6-2025.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25" alt="Happy Family in Pool" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-4" data-aos="fade-up">Subscribe to Our Newsletter</h2>
+            <p class="mb-8" data-aos="fade-up" data-aos-delay="100">Get 10% off your first purchase when you sign up for our newsletter!</p>
+            <form class="max-w-md mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <button type="submit" class="bg-accent px-6 py-3 rounded-r-md font-medium hover:bg-opacity-90 transition">
+                        Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16">
+                <div class="mb-12 lg:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-secondary mb-6">Contact Us</h2>
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Kem Free Water</h3>
+                        <p class="text-gray-600">Southern California</p>
+                    </div>
+                    <div class="mb-8">
+                        <a href="tel:8555363733" class="text-xl font-semibold text-primary hover:text-accent transition flex items-center">
+                            <i data-feather="phone" class="w-5 h-5 mr-2"></i> 855-536-3733
+                        </a>
+                    </div>
+                    <div class="bg-light p-6 rounded-lg shadow-inner">
+                        <h3 class="text-xl font-semibold text-primary mb-4">Drop us a line!</h3>
+                        <p class="text-gray-600 mb-4">
+                            Have questions about our chemical-free pool solutions? We're here to help!
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <form class="bg-light p-8 rounded-lg shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email*</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-2">Attach Files</label>
+                            <div class="border-2 border-dashed border-gray-300 rounded-md p-4 text-center">
+                                <i data-feather="upload" class="w-8 h-8 mx-auto text-gray-400 mb-2"></i>
+                                <p class="text-gray-500">Drag and drop files here or click to browse</p>
+                                <p class="text-sm text-gray-400 mt-1">Attachments (0)</p>
+                            </div>
+                        </div>
+                        <div class="mb-6 text-xs text-gray-500">
+                            This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" class="text-primary hover:underline">Privacy Policy</a> and <a href="https://policies.google.com/terms" class="text-primary hover:underline">Terms of Service</a> apply.
+                        </div>
+                        <div class="flex space-x-4">
+                            <button type="submit" class="bg-primary text-white px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition flex-1">
+                                Send
+                            </button>
+                            <button type="reset" class="bg-gray-200 text-gray-700 px-6 py-3 rounded-md font-medium hover:bg-gray-300 transition flex-1">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-sm">Copyright © 2025 Kem Free Water - All Rights Reserved.</p>
+                </div>
+                <div class="flex items-center">
+                    <span class="text-sm mr-2">Powered by</span>
+                    <a href="https://www.godaddy.com/websites/website-builder?isc=pwugc&utm_source=wsb&utm_medium=applications&utm_campaign=en-us_corp_applications_base" class="text-primary hover:underline">
+                        <img src="https://img1.wsimg.com/cms/GODADDY_white.svg" alt="GoDaddy" class="h-6">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent -->
+    <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 bg-white shadow-lg p-4 md:p-6 z-50 hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <p class="text-gray-700 mb-4 md:mb-0">
+                    We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.
+                </p>
+                <div>
+                    <button id="accept-cookies" class="bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-opacity-90 transition">
+                        Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                feather.replace();
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Show cookie consent if not already accepted
+        if (!localStorage.getItem('cookieConsent')) {
+            setTimeout(() => {
+                document.getElementById('cookie-consent').classList.remove('hidden');
+            }, 2000);
+        }
+
+        // Handle cookie acceptance
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            localStorage.setItem('cookieConsent', 'true');
+            document.getElementById('cookie-consent').classList.add('hidden');
+        });
+
+        // Initialize animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
